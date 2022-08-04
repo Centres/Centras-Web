@@ -1,9 +1,9 @@
 <template>
 <div class="header">
-  <div class="header-left">Centras</div>
+  <div class="header-left" @click="toPage('/home')">Centras</div>
   <div class="header-center">
     <div class="nav">
-      <div class="nav-button">Resume</div>
+      <div class="nav-button" @click="toPage('/resume')">Resume</div>
       <div class="nav-button">Project</div>
       <div class="nav-button">Contact</div>
     </div>
@@ -14,6 +14,11 @@
 
 <script setup lang="ts">
 
+import router from "@/router";
+
+const toPage = (url:string) =>{
+  router.push(url)
+}
 </script>
 
 <style scoped lang="scss">

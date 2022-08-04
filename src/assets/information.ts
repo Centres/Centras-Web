@@ -1,0 +1,29 @@
+const data = {
+    personalData:{
+        name:'王绍宇',
+        birth:'1995.12',
+        gender:'男',
+        workTime:'3年',
+        email:'Centras@qq.com',
+        phone:17688799126
+    },
+    personalEducation:[
+        {
+            school:'西雅图城市大学',
+            time:'2017.9-2018.12',
+            major:'计算机科学',
+            degree:'本科',
+            courses:['人机交互','网络伦理','系统分析与设计','项目管理','统计学','软件测试'],
+            location:'西雅图'
+        },
+        {
+            school:'深圳职业技术学院',
+            time:'2014.9-2017.6',
+            major:'软件技术',
+            degree:'专科',
+            courses:['C++','C#','web','数据库','Asp.net','英语听说读写'],
+            location:'深圳'
+        }
+    ]
+}
+export default data
