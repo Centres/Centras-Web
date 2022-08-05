@@ -19,8 +19,7 @@ console.log(data);
 <style scoped lang="scss">
 .resume{
   .personal-info{
-    margin-top: 10vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 }
 </style>

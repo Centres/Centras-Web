@@ -29,6 +29,7 @@ defineProps<Props>()
 <style scoped lang="scss">
 .info-card{
   width: 20vw;
+  min-width: 200px;
   border: 1px solid #ffffff;
   -webkit-border-radius: 2vw;
   -moz-border-radius: 2vw;

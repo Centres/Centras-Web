@@ -4,7 +4,7 @@
   <div class="header-center">
     <div class="nav">
       <div class="nav-button" @click="toPage('/resume')">Resume</div>
-      <div class="nav-button">Project</div>
+      <div class="nav-button" @click="toPage('/project')">Project</div>
       <div class="nav-button">Contact</div>
     </div>
   </div>
