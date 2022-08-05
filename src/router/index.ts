@@ -14,11 +14,11 @@ const router = createRouter({
     },
     {
       path: '/project',
-      component: () => import('@/views/Project.vue'),
+      component: () => import('@/views/example.vue'),
     },
     {
       path: '/covid',
-      component: () => import('@/views/Covid/Covid.vue'),
+      component: () => import('@/views/Covid.vue'),
     }
   ]
 })

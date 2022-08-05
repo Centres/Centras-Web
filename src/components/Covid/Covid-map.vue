@@ -1,5 +1,4 @@
 <template>
-  <div>123131231231</div>
 <div id="China">
 </div>
 </template>
