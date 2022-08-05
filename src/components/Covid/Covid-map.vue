@@ -18,7 +18,7 @@ instance?.proxy?.$Bus.on('get-map-data',()=>{
 })
  const renderMap = ()=>{
    let mapData = store.list.diseaseh5Shelf.areaTree[0].children
-   let firstTableData = mapData.filter(e=>e.name==='广东')
+   let firstTableData = mapData.filter((e: { name: string; })=>e.name==='广东')
    store.item = firstTableData[0].children
    let data = mapData.map((e: {
      children: any;
