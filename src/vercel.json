@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/resume", "destination": "/resume" },
+    { "source": "/project", "destination": "/project" },
+    { "source": "/covid", "destination": "/covid" }
+  ]
+}
