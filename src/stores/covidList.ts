@@ -10,6 +10,7 @@ export const useStore = defineStore({
   actions:{
     async getList(){
       const result = await getApiList()
+      console.log(result);
       this.list = result.data
     }
   }

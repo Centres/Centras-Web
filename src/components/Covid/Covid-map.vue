@@ -9,12 +9,13 @@
  import * as echarts from 'echarts'
  import '@/assets/china'
  import {geoCoordMap} from "@/assets/geoMap";
- import {onMounted} from "vue";
+ import {getCurrentInstance, onMounted} from "vue";
 
  const store = useStore()
- onMounted(()=>{
-   renderMap()
- })
+ const instance = getCurrentInstance()
+instance?.proxy?.$Bus.on('get-map-data',()=>{
+  renderMap()
+})
  const renderMap = ()=>{
    let mapData = store.list.diseaseh5Shelf.areaTree[0].children
    let firstTableData = mapData.filter(e=>e.name==='广东')
@@ -157,11 +158,6 @@
  }
 
 
-</script>
-<script lang="ts">
-export default{
-  name:'CovidMap'
-}
 </script>
 <style scoped>
 

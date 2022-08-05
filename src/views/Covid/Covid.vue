@@ -12,16 +12,17 @@
 
 <script setup lang="ts">
 import {useStore} from "@/stores/covidList";
-import {onMounted} from "vue";
+import {getCurrentInstance, onMounted} from "vue";
 import CovidMap from "@/components/Covid/Covid-map.vue";
 import CovidTable from '@/components/Covid/Covid-table.vue'
 
 const store = useStore()
 
-
+const instance = getCurrentInstance()
 
 onMounted(async () => {
   await store.getList()
+  instance?.proxy?.$Bus.emit('get-map-data')
   // renderMap()
 })
 // const renderMap = ()=>{
