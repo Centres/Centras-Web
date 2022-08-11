@@ -5,7 +5,7 @@
     <div class="nav">
       <div class="nav-button" @click="toPage('/resume')">Resume</div>
       <div class="nav-button" @click="toPage('/project')">Project</div>
-      <div class="nav-button">Contact</div>
+      <div class="nav-button">Note</div>
     </div>
   </div>
   <div class="header-right"></div>

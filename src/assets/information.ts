@@ -5,7 +5,8 @@ const data = {
         gender:'男',
         workTime:'3年',
         email:'Centras@qq.com',
-        phone:17688799126
+        phone:17688799126,
+        workPrefer:'前端'
     },
     personalEducation:[
         {
@@ -13,7 +14,7 @@ const data = {
             time:'2017.9-2018.12',
             major:'计算机科学',
             degree:'本科',
-            courses:['人机交互','网络伦理','系统分析与设计','项目管理','统计学','软件测试'],
+            courses:['人机交互','网络伦理','项目管理','统计学','软件测试','系统分析设计'],
             location:'西雅图'
         },
         {
@@ -23,6 +24,80 @@ const data = {
             degree:'专科',
             courses:['C++','C#','web','数据库','Asp.net','英语听说读写'],
             location:'深圳'
+        }
+    ],
+    workExperiences:[
+        {
+            companyName:'深圳市七彩祥云信息技术有限公司',
+            department:'平台技术部',
+            location:'深圳',
+            workTime:'2022.3-2022.8',
+            description:'公司是互联网包装印刷服务品牌名称傲彩（原小彩印），提供互联网包装盒在线下单报价等服务。公司分有多个项目。',
+            workDuty:'负责多个项目编写，需求维护等。'
+        },
+        {
+            companyName:'深圳小美摄影有限公司',
+            department:'技术部',
+            location:'深圳',
+            workTime:'2021.1-2022.1',
+            description:'公司提供摄影摄像相片冲洗服务，提供在线下单，小程序下单功能。',
+            workDuty:'官网，小程序维护。'
+        },
+        {
+            companyName:'深圳市诚泰航材设备有限公司',
+            department:'技术部',
+            location:'深圳',
+            workTime:'2019.3-2020.12',
+            description:'公司是面向国内各航司以及飞机维修商提供航材设备等服务，负责向国外采购，拥有香港分公司，主要客户有深圳航空，顺丰航空等。',
+            workDuty:'ERP系统需求，bug维护，官网维护。'
+        }
+    ],
+    projectExperiences:[
+        {
+            projectName:'智慧产业园机长看板',
+            role:'前端负责人',
+            projectDes:'主要给产业园生产线员工提供线上操作，信息查看，自动排产等。',
+            responseFor:'独立负责项目前端部分。',
+            programming:['HTML','CSS','JS','Websocket','Vue2','VueX','VueRouter','Vant','pdfjs'],
+            star:[
+                '为平板操作考虑布局使用PxToRem还原UI设计图，采用CSS+SVG替代图片。',
+                '登录页面进行限制，阻止多次点击重复调用接口，短信验证uid存储localStorage中，防止页面意外刷新，登录后清除并保存token。',
+                '登录后判断机器状态，避免生产中意外退出页面，导致无法后续操作。',
+                '考虑登录操作与后续操作人员不一致，登录后信息存储VueX，VueX转localStorage以便后续无需重复登录，也为方便后续操作。',
+                '设备选择以及人员列表js手写原生触摸版轮播图以还原UI设计稿。',
+                '看板页面当前订单判断逻辑抽离，便于复用维护以及阅读。',
+                '看板页面组件化封装，分为订单详情模块，备注缩略模块，操作模块，以及多个弹窗组件。',
+                '操作流程pdf使用pdfjs渲染，可放大缩小跳页。',
+                '列表页面渲染使用正则匹配格式化各项时间，考虑订单状态可变，采用websocket保持后端通信。',
+                '考虑工厂网络未知性，各个页面记录渲染时间。方便后续上线后根据实际情况优化。',
+                'Api接口封装单独文件，考虑后续多工序添加，便于维护新增。',
+                '考虑后续多工序沿用，各项数据处理与功能等编写可维护可复用。'
+            ]
+        },
+        {
+            projectName:'小程序包秘书项目',
+            role:'前端开发',
+            projectDes:'本项目主要为产业园负责人方便记账，录入设备以及人员信息等。',
+            responseFor:'新增刀模工序需求。',
+            programming:['HTML','CSS','JS','Vant','微信原生小程序'],
+            star:[
+                '新增工序附带的而外参数，做根据选择框判断限定显示与隐藏。',
+                '为后续工序考虑，机器维护页面以及人员添加页面改版，抽离子页面新增为一个模块。',
+                '对于接口修改，维护修改传参数据。',
+            ]
+        },
+        {
+            projectName:'傲彩官网',
+            role:'前端开发',
+            projectDes:'首页，包装模板页面，整体方案页面，智能生产页面，页头导航，底部。',
+            responseFor:'新增刀模工序需求。',
+            programming:['HTML','CSS','JS','Element','nuxt.js'],
+            star:[
+                '手写轮播框架。',
+                'CSS3动画效果。',
+                '各项js控制的功能。',
+                '预检功能，移植报价网预检到新官网提供体验。'
+            ]
         }
     ]
 }
